@@ -60,7 +60,7 @@ Heartbeat:Connect(HeartbeatUpdate)
  
 game:GetService("StarterGui"):SetCore("SendNotification",{Title="提示";Text="小黑猫中心ovo\n请等待1-12秒喵";Icon="rbxassetid://114514";Duration=3;})
  
- -- 这是我的公开UI库
+ -- 这是我的公开UI库（挽脚本）
 local success, ui = pcall(function()
 return loadstring(game:HttpGet("https://raw.githubusercontent.com/3345179204-sudo/-/refs/heads/main/UI%E5%BA%93", true))()
 end)
@@ -120,13 +120,13 @@ local lbl1 = about:Label("部分参考挽脚本")
 RainbowFont(lbl1)
 local lbl2 = about:Label("作者qq:2280267699")
 RainbowFont(lbl2)
-local lbl3 = about:Label("感谢支持挽脚本通用源码脚本")
+local lbl3 = about:Label("感谢支持小黑猫中心😊👐")
 RainbowFont(lbl3)
-local lbl4 = about:Label("就随便做的")
+local lbl4 = about:Label("不要拿来圈钱")
 RainbowFont(lbl4)
-local lbl5 = about:Label("请勿拿别的缝合来对比")
+local lbl5 = about:Label("圈钱的人我操你妈全家暴毙")
 RainbowFont(lbl5)
-local lbl6 = about:Label("请勿拿别的缝合来对比")
+local lbl6 = about:Label("👁️👄👁️")
 RainbowFont(lbl6)
  
 local about = UITab1:section("『关于』",true)
@@ -141,9 +141,9 @@ about:Label("你的用户名:" .. game.Players.LocalPlayer.DisplayName)
 about:Label("你的账号年龄:"..game.Players.LocalPlayer.AccountAge.."天")
 local player = game.Players.LocalPlayer
 if player.MembershipType == Enum.MembershipType.Premium then
-about:Label("会员状态： 有会员")
+about:Label("会员状态： 有会员😃")
 else
-about:Label("会员状态： 没有会员")
+about:Label("会员状态： 没有会员😢")
 end
 about:Label("语言： "..game.Players.LocalPlayer.LocaleId)
  
@@ -1889,7 +1889,7 @@ about:Label("检测到你当前的服务器不是☆战争大亨☆")
 about:Label("亲爱的挽脚本通用源码用户")
 about:Label("请到战争大亨执行脚本 会加载对应功能")
 
-local about = UITab13:section("『小黑猫☆刀球刃』", true)
+local about = UITab13:section("『小黑猫☆刀刃球』", true)
 about:Label("刀球刃更新中")
 
 game:GetService("StarterGui"):SetCore("SendNotification",{Title="欢迎使用";Text="ui库加载成功喵";Icon="rbxassetid://114514";Duration=3;})
