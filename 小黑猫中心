@@ -120,13 +120,13 @@ local lbl1 = about:Label("部分参考挽脚本")
 RainbowFont(lbl1)
 local lbl2 = about:Label("作者qq:2280267699")
 RainbowFont(lbl2)
-local lbl3 = about:Label("感谢支持小黑猫中心😊👐")
+local lbl3 = about:Label("感谢支持小黑猫中心")
 RainbowFont(lbl3)
 local lbl4 = about:Label("不要拿来圈钱")
 RainbowFont(lbl4)
 local lbl5 = about:Label("圈钱的人我操你妈全家暴毙")
 RainbowFont(lbl5)
-local lbl6 = about:Label("👁️👄👁️")
+local lbl6 = about:Label("._.")
 RainbowFont(lbl6)
  
 local about = UITab1:section("『关于』",true)
@@ -141,9 +141,9 @@ about:Label("你的用户名:" .. game.Players.LocalPlayer.DisplayName)
 about:Label("你的账号年龄:"..game.Players.LocalPlayer.AccountAge.."天")
 local player = game.Players.LocalPlayer
 if player.MembershipType == Enum.MembershipType.Premium then
-about:Label("会员状态： 有会员😃")
+about:Label("会员状态： 有会员")
 else
-about:Label("会员状态： 没有会员😢")
+about:Label("会员状态： 没有会员")
 end
 about:Label("语言： "..game.Players.LocalPlayer.LocaleId)
  
