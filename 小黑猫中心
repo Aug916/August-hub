@@ -1,3 +1,32 @@
+local Players = game:GetService("Players")
+local player = Players.LocalPlayer
+local playerGui = player:WaitForChild("PlayerGui")
+
+local screenGui = Instance.new("ScreenGui")
+screenGui.Name = "NotificationUI"
+screenGui.Parent = playerGui
+
+local textLabel = Instance.new("TextLabel")
+textLabel.Size = UDim2.new(0, 300, 0, 50)
+textLabel.Position = UDim2.new(0.5, -150, 0.1, 0)
+textLabel.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+textLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+textLabel.TextScaled = true
+textLabel.Text = "UI正在加载中,请等待"
+textLabel.Parent = screenGui
+
+local corner = Instance.new("UICorner")
+corner.CornerRadius = UDim.new(0, 10)
+corner.Parent = textLabel
+
+task.delay(3, function()
+    for i = 1, 30 do
+        textLabel.TextTransparency = i / 30
+        textLabel.BackgroundTransparency = i / 30
+        task.wait(0.05)
+    end
+    screenGui:Destroy()
+end)
 local LBLG = Instance.new("ScreenGui")
 local LBL = Instance.new("TextLabel")
 local PlayerLabel = Instance.new("TextLabel")
@@ -120,14 +149,16 @@ local lbl1 = about:Label("部分参考挽脚本")
 RainbowFont(lbl1)
 local lbl2 = about:Label("作者qq:2280267699")
 RainbowFont(lbl2)
-local lbl3 = about:Label("感谢支持小黑猫中心")
+local lbl3 = about:Label("赞助者名单")
 RainbowFont(lbl3)
-local lbl4 = about:Label("不要拿来圈钱")
+local lbl4 = about:Label("解卡厨师(这个哥们儿不乘)")
 RainbowFont(lbl4)
-local lbl5 = about:Label("圈钱的人我操你妈全家暴毙")
+local lbl4 = about:Label("Kanl脚本作者(竟然是大帝)")
 RainbowFont(lbl5)
-local lbl6 = about:Label("._.")
+local lbl5 = about:Label("不要拿来圈钱")
 RainbowFont(lbl6)
+local lbl6 = about:Label("圈钱的人我操你妈全家暴毙")
+RainbowFont(lbl7)
  
 local about = UITab1:section("『关于』",true)
 local function safeIdentify()
